@@ -28,15 +28,46 @@ print("Your mission is to find the treasure.")
 #Write your code below this line 👇
 
 option1 = input("You arrive to the island and on the right there is a clear path aiming straight to the other side of the island and the left path with full of leaves and trees. Which path do you choose?(Left or Right): ")
-
-while noplay == 'yes' or noplay == 'Yes' or noplay == 'y':
     
-    if option1 == 'left' or option1 == 'Left':
-        input("You encounter a snake while going throught the trees and leaves you have to optiones run or take out a matchete(type run or matchete): ")
-    elif option == 'right' or option1 == 'right':
-        print("You end up at the other side of island and encounter some pirates pointing a gun at you.")
-     print("They take you hostage into their ship leaving the island and never to been seen again.")
-        print('''⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+if option1 == 'left' or option1 == 'Left':
+    option2 = input("You encounter a snake while going throught the trees and leaves you have to optiones run or take out a matchete(type run or machete): ")
+    
+    if option2 == 'run' or option2 == 'Run':
+        option3 = input("You manage to escape the snake and you encounter a big treasure chest, want to open it?(type open): ")
+        
+        if option3 == 'open' or option3 == 'Open':
+            print("You have found the treasure Congratulation!!!")
+        else:
+            print("Please type what is provided to you. Please run the the application again.")
+        
+    elif option2== 'machete' or option2 == 'Machete':
+        print("You try to fight the snake but before grabing the machete the snakes gets to bite you and poision you")
+        print("You get inject with a very letal posion and die within seconds")
+        print("You were unavailable to find the treasure")
+        print("End of game")
+        print('''⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⣠⣤⣤⣄⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠸⣿⣿⣿⣿⣷⡀⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⢀⣼⣿⣿⣿⣿⠟⠁⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⠟⠁⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⢀⣴⣿⠟⠛⠛⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⣠⣿⢏⣠⣴⣶⣶⣤⡀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⣿⣷⣿⣿⣿⣿⣿⣿⣿⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠙⢿⣿⣿⣿⣿⡿⠟⠁⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠉⠉⠉⠁⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣤⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿''')
+    else:
+        print("Please type what is provided to you. Please run the the application again.")
+    
+        
+elif option1 == 'right' or option1 == 'right':
+    print("You end up at the other side of island and encounter some pirates pointing a gun at you.")
+    print("They take you hostage into their ship leaving the island and never to been seen again.")
+    print('''⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠈⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -51,5 +82,5 @@ while noplay == 'yes' or noplay == 'Yes' or noplay == 'y':
     ⣿⣿⣿⣿⠿⣿⠿⠛⢷⡄⠹⣇⣀⣠⣴⣾⣟⣉⣸⠏⢠⡾⠛⠿⣿⠿⣿⣿⣿⣿
     ⣿⣿⣿⡇⠀⢸⣧⣤⣾⣿⣄⣹⣿⣿⣿⣿⣿⣿⣏⣠⣿⣷⣤⣼⡇⠀⢸⣿⣿⣿
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿''')
-    else:
-        input("You have to pick the options provided to you. Do you want to play again?(types yes if not type no): ")
+else:
+    print("Please type what is provided to you. Please run the the application again.")
